@@ -23,3 +23,29 @@ share= amount / friends
 print("Each friend has to pay: ", share)
 
 
+#Emoji Converter
+message= input("Enter your message: ")
+if not message:
+    print("No message entered.")
+elif len(message) > 100:
+    print("Message is too long. Please limit to 100 characters.")
+else:
+    message=message.replace(":)","😊")
+    message=message.replace(":(","😞")
+    message=message.replace("<3","❤️")
+    message= message.replace(":D","😃")
+    message= message.replace(";)", "😉")
+    print("Converted message: ", message)
+
+# Assignment_4
+# #  take a sentence as input and print lowercase, uppercase and replace spaces with underscores
+sentence= input("Enter a sentence: ")
+lowercase_sentence= sentence.lower()
+uppercase_sentence= sentence.upper()
+replaced_sentence= sentence.replace(" ","_")
+total_characters= len(sentence)
+print("Total characters in the sentence: ", total_characters)
+print("Lowercase: ", lowercase_sentence)
+print("Uppercase: ", uppercase_sentence)
+print("Spaces replaced with underscores: ", replaced_sentence)
+    
