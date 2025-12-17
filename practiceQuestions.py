@@ -48,3 +48,14 @@ for i in range(3):
     foods.append(food)
 print("Foods list: ", foods)
 print("Length of foods list: ", len(foods)) 
+
+# dictionaries
+marks={}
+for i in range(3):
+    subject= input(str(i) + ": Enter subject name: ")
+    mark= int(input("Enter marks for " + subject + ": "))
+    marks[subject]= mark
+print("Marks dictionary: ", marks)
+
+
+
