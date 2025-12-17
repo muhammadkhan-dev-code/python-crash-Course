@@ -31,3 +31,13 @@ replaced_sentence= sentence.replace(" ","_")
 print("Lowercase: ", lowercase_sentence)
 print("Uppercase: ", uppercase_sentence)
 print("Spaces replaced with underscores: ", replaced_sentence)
+
+# take input num and positive if num is greater than 0 else negative or zero
+num= int(input("Enter a number: "))
+if num>0:
+    print("Positive number", num)
+elif num<0:
+    print("Negative number", num)
+else:
+    print("Zero")
+
