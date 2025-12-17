@@ -49,3 +49,15 @@ print("Lowercase: ", lowercase_sentence)
 print("Uppercase: ", uppercase_sentence)
 print("Spaces replaced with underscores: ", replaced_sentence)
     
+# chapter_4 assignments
+#1 :  3 movies as input and store them in a list and print the list 
+movies= []
+for i in range(3):
+    movie= input(str(i) + ": Enter movie name: ")
+    movies.append(movie)
+print("Movies list: ", movies)
+# 2:  print the highest and lowest marks from the given tuple 
+marks=(87,62,33,95,76)
+print("Highest marks: ", max(marks))
+print("Lowest marks: ", min(marks))
+

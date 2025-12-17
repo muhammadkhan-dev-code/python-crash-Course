@@ -41,3 +41,10 @@ elif num<0:
 else:
     print("Zero")
 
+# take input as take 3  foods name in a list and print list and length of list
+foods= []
+for i in range(3):
+    food= input(str(i) + ": Enter food name: ")
+    foods.append(food)
+print("Foods list: ", foods)
+print("Length of foods list: ", len(foods)) 
