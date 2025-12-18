@@ -61,3 +61,21 @@ marks=(87,62,33,95,76)
 print("Highest marks: ", max(marks))
 print("Lowest marks: ", min(marks))
 
+# chapter_5 assignments
+# 1: Create a dictionary to store meaning of 3 english words and print them
+dictionary={
+    "aberration":"a departure from what is normal, usual, or expected",
+    "convivial":"friendly, lively, and enjoyable",
+    "ephemeral":"lasting for a very short time"
+}
+for word, meaning in dictionary.items():
+    print(f"{word}: {meaning}") 
+
+# 2  create a set of numbers and perform Union and Intersection with another set of numbers
+set1={1,2,3,4,5}
+set2={4,5,6,7,8}
+union_set= set1.union(set2)
+intersection_set= set1.intersection(set2)
+print("Union of set1 and set2: ", union_set)
+print("Intersection of set1 and set2: ", intersection_set)
+

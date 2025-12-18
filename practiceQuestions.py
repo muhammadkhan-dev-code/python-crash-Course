@@ -57,5 +57,11 @@ for i in range(3):
     marks[subject]= mark
 print("Marks dictionary: ", marks)
 
+# list of programming language and convert it into sets and print unique languages 
+programming_langugages= ['Python', 'Java', 'C++', 'JavaScript', 'Python', 'Java','C']
+print(type(programming_langugages))
+programming_set= set(programming_langugages)
+print("Unique programming languages: ", programming_set)
+print("Type of programming_set variable is: ", type(programming_set))
 
 

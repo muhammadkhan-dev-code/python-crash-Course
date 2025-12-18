@@ -24,7 +24,15 @@ student.items() # returns all items as (key,value) pairs
 for key,value in student.items():
     print(f"{key}:{value}")
 
+# Se ts
+# unordered collection of unique items mutable
+food={"pizza","burger","pasta"}
+print(type(food))
 
-
+empty_set=set() # to create an empty set
+food.add("fries")
+food.remove("pasta") # raises error if item not found
+food.discard("pasta") # does not raise error if item not found
+food.pop() # removes and returns an arbitrary item
 
 
