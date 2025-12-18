@@ -64,4 +64,25 @@ programming_set= set(programming_langugages)
 print("Unique programming languages: ", programming_set)
 print("Type of programming_set variable is: ", type(programming_set))
 
+# loops
+num=1
+while num<=10:
+    print("Number: ", num)
+    num += 1
+even=[]
+for i in range(1,51):
+    if i%2==0:
+        even.append(i)
+
+print("Even numbers from 1 to 50: ", even)
+
+#  sum of natural Numbers up to n 
+def sum_of_natural_numbers(n):
+    sum=0
+    for i in range(1,n+1):
+        sum += i
+    return sum
+n= int(input("Enter a number to find sum of natural numbers up to n: ")) # 5 
+result= sum_of_natural_numbers(n) # 1+2+3+4+5=15
+print("Sum of natural numbers up to", n, "is:", result)
 
