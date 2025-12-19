@@ -86,3 +86,33 @@ n= int(input("Enter a number to find sum of natural numbers up to n: ")) # 5
 result= sum_of_natural_numbers(n) # 1+2+3+4+5=15
 print("Sum of natural numbers up to", n, "is:", result)
 
+# funtions question
+
+def show_age(name,age):
+   print(f"Hello, my name is {name} and I am {age} years old.")
+show_age("Alice", 30)
+show_age("Bob", 25)
+
+def vowel_constants(str):
+    vowels= "aeiou"
+    count_vowel=0
+    count_constant=0
+    for char in str.lower():
+        if char.isalpha():
+            if char in vowels:
+                count_vowel += 1
+            else:
+                count_constant += 1
+    return (count_vowel, count_constant)
+vowels, constants= vowel_constants("Hello World")
+print("Vowels:", vowels)
+print("Constants:", constants) 
+
+# local and global variables
+# gloabl variable can also  be accessed inside function but local variable cannot be accessed outside function
+x= "global x"
+def my_function():
+    y= "local y"
+    print(x)  # accessing global variable
+    print(y)  # accessing local variable
+
