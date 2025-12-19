@@ -1,4 +1,17 @@
 # chat assistance Ai Assistance 
+import datetime
+import time
+
+
+
+def greetUser(name):
+    present_time=datetime.datetime.now().hour
+    if present_time<12:
+        print(f"Hi {name}, Good Morning  ! Welcome to Your buddy ChatBot ")
+    elif 12<=present_time<16:
+        print(f"Hi {name}, Good Afternoon  ! Welcome to Your buddy ChatBot ")
+    else:
+        print(f"Hi {name}, Good Evening  ! Welcome to Your buddy ChatBot ")
 
 def getRespone(user_input):
     for eachKey in responses:
@@ -11,7 +24,7 @@ responses = {
     "hello": "Hello! How can I assist you today?",
     "how are you": "I'm just a program, but thanks for asking! How can I help you?",
     "what is your name?": "I'm your friendly ChatBot!",
-    "who are you?": "I'm an AI designed to assist you with your questions.",
+    "who are you": "I'm an AI designed to assist you with your questions.",
     "motivate me ": "Believe in yourself! You can achieve anything you set your mind to.",
     "happy": "Happiness is a choice! Choose to be happy every day.",
     "sad": "It's okay to feel sad sometimes. Remember, after the rain comes the rainbow.",
@@ -21,10 +34,12 @@ responses = {
 }
 
 def main():
-    print("Hello! Welcome to Your buddy ChatBot.")
+    name = input("Enter your name: ")
+    greetUser(name)
     print("You can ask me the basic questions & Type 'bye' to end the chat.")
     while True:
         user_input = input("You: ")
+        time.sleep(1)
         if user_input.lower() == "bye":
             print("ChatBot: " + responses["bye"])
             break
