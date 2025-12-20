@@ -116,3 +116,53 @@ def my_function():
     print(x)  # accessing global variable
     print(y)  # accessing local variable
 
+
+    # OOP in Python       : Reusability and Modularity Real World projects
+class Car:
+    brand="Scorpio"
+    model="2020"
+    color="Black"
+
+my_car= Car()
+print("Car Brand: ", my_car.brand)
+
+class Laptop:
+    brand="Dell"
+    model="XPS 13"
+    ram="16GB"
+    price=" 1 lac"
+
+laptop1= Laptop()
+laptop2= Laptop()
+print("Laptop 1 information: " )
+print("Laptop Model: ", laptop1.model)
+print("Laptop Brand: ", laptop1.brand)
+laptop1.price=" 90k"  # modifying attribute value
+print("Laptop Price: ", laptop1.price)
+
+print("Laptop 2 information: " )
+laptop2.model="Inspiron"
+print("Laptop Model: ", laptop2.model)
+print("Laptop Brand: ", laptop2.brand)
+laptop2.price=" 70k"
+print("Laptop Price: ", laptop2.price)
+
+class Student:
+    def __init__(self,name,marks):
+        self.name= name
+        self.marks= marks
+    def average(self):
+        total=0
+        for mark in self.marks:
+            total= total + mark
+            
+        avg= total/len(self.marks)
+        return avg
+    
+    def display(self):
+        print("Student Name: ", self.name)
+        print("Marks: ", self.marks)
+        print("Average Marks: ", self.average())
+
+student1= Student("Muhammad Khan", [90,90,86])
+student1.display()
