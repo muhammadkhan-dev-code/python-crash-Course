@@ -25,7 +25,6 @@ num1=int(input("Enter first number: "))# 3
 num2=int(input("Enter second number: "))# 4
 print("True" if num1>num2 else "False")
 
-
 # input marks in between 0-100 and print grade
 marks=int(input("Enter marks between 0-100: "))
 if marks>=90 and marks<=100:
@@ -73,7 +72,30 @@ else:
 num=int(input("Enter a number: "))
 print("Mutliple of 7" if num%7==0 else "Not multiple of 7")
 
+# List:
+# Enter the name of three moives and stroe in list
+movies=[]
+for i in range(3):
+    movie=input("Enter the name of movie {}: ".format(i+1))
+    movies.append(movie)
 
+print("Movies List:", movies) # Output: ['Movie1', 'Movie2', 'Movie3']
 
+# check the list that contain the pailndrome or not 
+list1=[1,2,3,2,1]
+list2= list1.copy()
 
+list2.reverse()
+if list1==list2:
+    print("The list is palindrome original list:",list1 ," Reversed list:",list2)
+else:
+    print("The list is not palindrome", list1 ," Reversed list:",list2)
 
+grade=("C","D","A","A","A","B","A","C","D","B")
+print("Original Grades Tuple:", grade)
+print("count of Grade A", grade.count("A")) # Output: 4
+print("Index of first occurrence of Grade B:", grade.index("B")) # Output: 5
+
+grade=["C","D","A","A","A","B","A","C","D","B"]
+grade.sort()
+print("Sorted Grades List:", grade)

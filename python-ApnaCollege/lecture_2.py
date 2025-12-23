@@ -1,7 +1,4 @@
-# ---------Lecture 2 ------------
-
-# Python Strings
-
+# ---------Lecture 2  Handle Strings ------------
 str1="Hello"
 str2='World'
 print(str1+" "+str2)

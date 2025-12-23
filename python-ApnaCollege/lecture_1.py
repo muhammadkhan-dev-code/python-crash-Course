@@ -1,5 +1,5 @@
 
-# ---------Lecture 1 ------------
+# ---------Lecture 1  Variables and Data Types ------------
 print("Python Course With Apna College")
 print("Hello World!") # first program in python 
 print("My name is muhammad Khan ","Age is 21")
