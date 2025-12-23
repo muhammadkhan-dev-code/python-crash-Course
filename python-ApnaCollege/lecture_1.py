@@ -256,3 +256,51 @@ print(num," is ",result)
 age=int(input("Enter your age: "))
 vote=("yes","no")[age<18]
 print("Can you vote? ",vote)
+
+
+# Type Conversion in Python
+# Implicit Type Conversion
+# when we mix int and float in an expression, python converts int to float  
+a,b=2,2.5
+sum=a+b
+print("Sum of ",a," and ",b," is ",sum) # int -> float
+
+# Explicit Type Conversion
+# we can convert one data type to another using type casting functions  
+# int(), float(), str(), bool()   used for type casting
+num1=int(input("Enter first number: "))
+num2=int(input("Enter second number: "))
+sum=num1+num2
+print("Sum of ",num1," and ",num2," is ",sum ,"Type of sum is ",type(sum))
+# converting float to int
+# this will truncate the decimal part
+num3=float(input("Enter a float number: "))
+num4=int(num3)
+print("Float number: ",num3," after converting to int: ",num4)
+
+# input from user input() function will be used to take input from user
+# input() function always returns string value
+num5=int(input("Enter an integer number: "))
+print("Integer number: ",num5," Type: ",type(num5))
+
+name= input("Enter your name: ")
+age= int(input("Enter your age: "))
+marks= float(input("Enter your marks: "))
+print(" Student's Name: ",name)
+print(" Student's Age: ",age)
+print(" Student's Marks: ",marks)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
