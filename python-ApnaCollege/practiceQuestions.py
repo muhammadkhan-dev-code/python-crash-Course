@@ -99,3 +99,30 @@ print("Index of first occurrence of Grade B:", grade.index("B")) # Output: 5
 grade=["C","D","A","A","A","B","A","C","D","B"]
 grade.sort()
 print("Sorted Grades List:", grade)
+
+# Dict and Sets 
+
+word_meaning={
+    "table":[
+        "a piece of furniture",
+        "list of facts and figures"
+        ],
+    "cat":"A small element"
+}
+print(word_meaning)
+
+subjects_list={
+    "Python","Java","C++","JavaScript","Java","Python"," Java","C","Python"," Java","C"
+}
+
+# print(len(set(subjects_list)))
+marks={}
+mark1=int(input("Enter Marks : "))
+mark2=int(input("Enter 2nd marks : "))
+mark3=int(input("Enter 3rd marks : "))
+marks.update({"physics":mark1})
+marks.update({"maths":mark2})
+marks.update({"chem":mark3})
+
+# store 9 , 9.0 in sets
+value={("float",9.0),("int",9)}
