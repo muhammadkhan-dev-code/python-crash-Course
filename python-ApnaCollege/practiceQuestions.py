@@ -126,3 +126,85 @@ marks.update({"chem":mark3})
 
 # store 9 , 9.0 in sets
 value={("float",9.0),("int",9)}
+
+#------------ lOOPS Assignment----------
+
+count=1
+while count<=100:
+    print(count, ",")
+    count+=1
+
+num= int(input("Enter any Number : "))
+print(f"Multiplication Table  of {num}")
+a=1
+while a<=10:
+    print(f" {a} * {num}= {a*num}")
+    a+=1
+
+# print [1,4,9,16,25,36,49,64,81,100]
+
+nums=[1,4,9,16,25,36,49,64,81,100]
+idx=0
+while idx<len(nums):
+    print(nums[idx])
+    idx+=1
+
+
+# search for a number x in this tuple using loop
+# [1,4,9,16,25,36,49,64,81,100]
+nums =(1,4,9,16,25,36,49,64,81,100)
+n= int(input("Enter any Number : "))
+
+i=0
+while i<len(nums):
+    if  nums[i]==n:
+        print("Found : ", nums[i])
+        break
+    else:
+        print("Number not found")
+    i+=1
+
+# [1,4,9,16,25,36,49,64,81,100] using for 
+
+nums=[1,4,9,16,25,36,49,64,81,100]
+for i in nums:
+    print(i)
+
+tup=(1,4,9,16,25,36,49,64,81,100)
+x=49
+idx=0
+for el in tup:
+    if (el == x):
+        print(" Found Number at index ",idx)
+        break
+    idx+=1 # track the index of do 
+
+# for i in range(1,101):
+#     print(i)
+
+# for i in range(101,0,-1):
+#     print(i)
+
+num= int(input("Enter any number : "))
+sum=0
+
+i=1
+while i<=num:
+    sum=+i
+
+print(sum)
+# factorial 
+fact=1
+num= int(input("Enter any number : "))
+for i in range(1,num+1):
+    fact*=i
+
+
+
+
+
+
+
+
+
+
