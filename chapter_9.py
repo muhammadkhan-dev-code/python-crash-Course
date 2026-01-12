@@ -12,7 +12,7 @@ class Vehicle:
 # __init__ method -> Constructor
     def __init__(self, brand, model):
         self.brand= brand
-        self.model= model   
+        self.model= model 
 
 
 car1= Vehicle()

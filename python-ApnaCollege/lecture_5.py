@@ -47,6 +47,7 @@ for num in list:
 veg=["potato","brijal","lady finger"]
 for v in veg:
     print(v)
+    
 else:
     print("End")
 

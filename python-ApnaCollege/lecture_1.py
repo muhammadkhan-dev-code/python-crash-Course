@@ -1,4 +1,3 @@
-
 # ---------Lecture 1  Variables and Data Types ------------
 print("Python Course With Apna College")
 print("Hello World!") # first program in python 

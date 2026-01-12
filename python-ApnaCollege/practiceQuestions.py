@@ -199,12 +199,120 @@ num= int(input("Enter any number : "))
 for i in range(1,num+1):
     fact*=i
 
+# function will return odd if it is odd
+
+def check_num(num):
+    if(num%2==0):
+        return f"Given Number is Even  and Number is  {num} "
+    else:
+        print(f" Given Number is odd {num}")
+
+num=int(input("Enter any Number : "))
+print(check_num(10))
+
+# factorial using recursion recurance relation
+def fact(n):
+    if (n<=1):
+        return 1
+    return n*fact(n-1)
+
+def sum_Of_n(n):
+    if (n==0):
+        return 0
+    return sum_Of_n(n-1)+n
+
+
+l=["a","b","c","d","e","f"]
+def print_list(list,idx):
+    if(idx==len(list)):
+        return 
+    print( list[idx])
+    print_list(list,idx+1)
+
+print_list(l,0)
+
+#i/o practice
+
+with open('practice.txt','w') as newFile:
+    newFile.write("Hi Everyone \n we are learning file i/o")
+    newFile.write("using java \n i like programming in java")
+   
+with open('practice.txt','r') as newFile:
+     data=newFile.read()
+
+d= data.replace("java","Python")
+print(d)
+with open('practice.txt','w') as newFile:
+     newFile.write(d)
+
+with open('practice.txt','r') as newFile:
+     data= newFile.read()
+     if (data.find("learning")!=-1):
+          print("Found")
+     else:
+          print("Not found ")
+def check_for_line():
+     word="learning"
+     data=True
+     line=1
+     with open("practice.txt",'r') as f:
+        while data:
+             d=f.readline()
+             if (word in d):
+                  print(line)
+                  break
+             line+=1
+        return -1
+
+check_for_line()
+
+
+# Practice Question
+class Circle:
+     def __init__(self,radius):
+          self.radius=radius
+     def cal_Area(self):
+          return 3.14*self.radius**2
+     def perimeter(self):
+          return 2*3.14*self.radius
+
+c1=Circle(21)
+print(c1.cal_Area())
+print(c1.perimeter())          
+
+class Employee:
+     def __init__(self,role,dept,sal):
+          self.role=role
+          self.dept=dept
+          self.sal=sal
+     def show_details(self):
+          print(f"Role :{self.role}")
+          print(f" Department : {self.dept}")
+          print(f"Salary: {self.sal}")
+
+class Engineer(Employee):
+     def __init__(self,name,age):
+          self.name=name
+          self.age=age
+          super().__init__("Engineer","IT","100000")
 
 
 
+e1=Employee("accountant","Finance","66000")
+eng1=Engineer("Muhammad Khan",22)
+eng1.show_details()
 
+class Order:
+     def __init__(self,itemName,itemPrice):
+          self.itemName=itemName
+          self.itemPrice=itemPrice
 
+     def __gt__(self,order2):
+          return self.itemPrice>order2.itemPrice
+     
 
-
+order1=Order("Earphone",4000)
+order2=Order("Tea",78)
+print(order1>order2)
 
 
